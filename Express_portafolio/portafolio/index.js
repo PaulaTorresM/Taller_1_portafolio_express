@@ -8,6 +8,7 @@ app.set('view engine' , 'ejs')
 
 app.set('views', __dirname + '/views' )
 
+app.use('/', require('./router/rutasWeb'));
 
     app.get('/perfil', function(req, res){
         res.render('perfil');
